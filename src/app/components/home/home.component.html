@@ -1,0 +1,26 @@
+<div class="w3-bar w3-black">
+    <button  class="w3-bar-item w3-button" (click)="openPage('Problem')">Problem</button>
+    <button  class="w3-bar-item w3-button" (click)="openPage('CheckIn')">Check In</button>
+    <button class="w3-bar-item w3-button" (click)="openPage('Details')">Details</button>
+    <button class="w3-bar-item w3-button" (click)="openPage('Approval')">Approval</button>
+  </div>
+<div *ngIf="isProbleShow" id="Problem" class="page">
+    <
+   
+  </div>
+  
+  <div  *ngIf="isCheckInShow" id="CheckIn" class="page" >
+    <h2>CheckIn</h2>
+    
+  </div>
+  
+  <div *ngIf="isDetailsShow" id="Details" class="page">
+    <h2>Detail</h2>
+   
+  </div>
+  <div *ngIf="isApprovalShow" id="Approval" class="page">
+    <h2>Approval</h2>
+   
+  </div>
+  
+  
